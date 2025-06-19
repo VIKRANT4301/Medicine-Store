@@ -1,0 +1,322 @@
+/* General Page Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/medical2.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #ffffff;  /* White color for better contrast */
+  padding: 20px;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+  font-weight: bold;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #ffffff;  /* White color for better contrast */
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+
+/* Form Styling */
+form {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 100%;
+  width: 400px; /* Max width to ensure no overflow */
+  box-sizing: border-box;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form input:focus {
+  border-color: #2d6a4f; /* Green border on focus */
+  outline: none;
+}
+
+form button {
+  background-color: #2d6a4f; /* Medical green color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1b5e3a; /* Darker green on hover */
+}
+
+/* Dealers List Styling */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul li {
+  background-color: #2d6a4f; /* Green background for items */
+  padding: 10px;
+  border-radius: 4px;
+  margin: 5px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+ul li:hover {
+  background-color: #2980b9; /* Soft blue hover effect */
+  cursor: pointer;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;  /* White color for better contrast */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #333; /* Darker color on hover */
+}
+
+/* Button Styling */
+.btn {
+  font-weight: 700;
+  transition: .5s;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 8px 6px -6px #555555;
+  -moz-box-shadow: 0 8px 6px -6px #555555;
+  box-shadow: 0 8px 6px -6px #555555;
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  background-color: #2d6a4f; /* Green primary button */
+  border-color: #2d6a4f;
+}
+
+.btn-primary:hover {
+  background-color: #1b5e3a; /* Darker green on hover */
+  border-color: #1b5e3a;
+}
+
+.btn-square {
+  width: 36px;
+  height: 36px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.btn-sm-square {
+  width: 28px;
+  height: 28px;
+}
+
+.btn-lg-square {
+  width: 46px;
+  height: 46px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #2d6a4f; /* Green table header */
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal Styling */
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+  border-top: 1px solid #ddd;
+}
+
+.modal-footer .btn {
+  padding: 8px 15px;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-item {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #2d6a4f; /* Green pagination item */
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.pagination-item:hover {
+  background-color: #1b5e3a; /* Darker green on hover */
+}
+
+.pagination-item.active {
+  background-color: #1b5e3a; /* Darker green active item */
+}
+
+.pagination-item.disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+/* Confirmation Modal */
+.modal-dialog {
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.modal-header {
+  background-color: #2d6a4f; /* Green confirmation modal header */
+  color: white;
+  border-radius: 8px 8px 0 0;
+  padding: 10px;
+}
+
+.modal-body {
+  padding: 20px;
+  color: #333;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 15px;
+  margin: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Adjust font size */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  form {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  table th, table td {
+    font-size: 14px;
+    padding: 8px; /* Reduce padding */
+  }
+
+  .pagination-item {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  form {
+    width: 90%;
+    padding: 15px; /* Adjust padding for small screens */
+  }
+
+  .pagination-item {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}

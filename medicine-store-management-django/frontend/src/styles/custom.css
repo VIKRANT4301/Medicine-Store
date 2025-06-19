@@ -1,0 +1,303 @@
+/* General Page Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/medical2.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Home Page Styling */
+.home-container {
+  background: url('../images/pharma-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.home-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+.home-description {
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+  animation: fadeIn 2.5s ease-in-out;
+  color: #f5f5f5;
+}
+
+.cta-button {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  background-color: #2d6a4f;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.cta-button:hover {
+  background-color: #1b5e3a;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Flash Offer Container */
+.flash-offer {
+  margin-top: 40px;
+  background-color: #1f7f5a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: white;
+  margin-bottom: 30px;
+}
+
+.flash-offer h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.offer-item {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: blink 1s infinite alternate;
+  color: #333;
+}
+
+.offer-item strong {
+  color: #2d6a4f;
+  font-weight: bold;
+}
+
+.offer-item p {
+  color: #2980b9;
+  animation: blink 1s infinite alternate;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-description {
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .flash-offer {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .offer-item {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .home-container {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .flash-offer {
+    margin-top: 15px;
+    padding: 12px;
+  }
+
+  .offer-item {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .home-container {
+    padding: 0 5px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Form Styling */
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  max-width: 90%;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* Dealers List Styling */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 5px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+  background-color: skyblue;
+  cursor: pointer;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #333;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 15px;
+  margin: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
